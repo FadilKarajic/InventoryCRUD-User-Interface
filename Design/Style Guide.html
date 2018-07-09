@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>My Style Guide</title>
+
+    <!-- Site theme -->
+    <!--<link rel="stylesheet" type="text/css" href="theme.css">-->
+    <style>
+        body{
+    background-color:#E4D4FF;
+}
+
+#mySidenav a {
+    position: absolute; /* Position them relative to the browser window */
+    left: -10px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 150px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Increase font size */
+    color: white; /* White text color */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #2196F3;
+    
+}
+
+#mySidenav a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+h1,h2.h3{
+    font-family: 'Merriweather', serif;
+}
+.box{
+    display: inline-block; 
+    width:200px; 
+    height:200px;
+    border:1px solid; 
+    border-radius: 5px 5px 5px 5px;
+    margin-bottom:20px;
+ 
+}
+
+#primary1{
+    background-color:#2196F3;
+    margin-left:300px;
+}
+#primary2{
+    background-color:#3CBC8D;
+}
+
+    
+}
+.font {
+    top: 160px;
+    background-color: #2196F3;;
+}
+
+.colorTheme {
+    top: 220px;
+    background-color: #2196F3; 
+}
+.headings {
+    top: 280px;
+    background-color: #2196F3; 
+}
+
+.buttons {
+    top: 340px;
+    background-color: #2196F3;
+}
+.formElements{
+    margin-top:330px;
+}
+.messages {
+    top: 460px;
+    background-color: #2196F3; 
+}
+.warning{
+    background-color:red;
+    margin-right:300px;
+    padding:10px;
+    border-radius: 5px 5px 5px 5px;
+}
+.danger{
+    background-color:yellow;
+    margin-right:300px;
+    padding:10px;
+    border-radius: 5px 5px 5px 5px;
+}
+.success{
+    background-color:green;
+    margin-bottom:50px;
+    margin-right:300px;
+    padding:10px;
+    border-radius: 5px 5px 5px 5px;
+}
+.topnav {
+    background-color: #2196F3;
+    overflow: hidden;
+    margin-left:280px;
+    margin-right:200px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav p{
+    margin-left:20px;
+    text-align:left;
+    color:white;
+    font-size:20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.page-header{
+    padding-bottom:9.5px;
+    border-bottom:1px solid #0c0c0c;
+    margin-left:300px;
+    margin-right:300px;
+    margin-top:100px;
+}
+.spacer{
+    margin-left:300px;
+}
+p{
+    margin-left:300px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#sub-head{
+    margin-left:300px;
+}
+button{
+    margin-left:300px;
+    background-color:#2196F3;
+    margin-bottom:20px;
+    font-size:16pt;
+    border-radius: 5px 5px 5px 5px;
+    color:white;
+}
+.inputLabel{
+    margin-top:20px;
+    margin-left:300px;
+    margin-bottom:20px;
+}
+.inputField{
+    margin-top:20px;
+    margin-left:10px;
+    margin-bottom:20px;
+    border: 2px solid #2196F3;
+    border-radius: 5px 5px 5px 5px;
+    height:30px;
+ 
+}
+#footer{
+    background-color:#2196F3;
+    margin:auto;
+    color:white;
+    text-align:center;
+}
+
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Ubuntu" rel="stylesheet"> 
+
+</head>
+
+<body>
+    <div class="topnav">
+        <p>My Style Guide</p>
+    </div> 
+
+    <div id="mySidenav" class="sidenav">
+        <a href="#font" class="font">Font</a>
+        <a href="#colorTheme" class="colorTheme">Color Theme</a>
+        <a href="#headings" class="headings">Headings</a>
+        <a href="#buttons" class="buttons">Buttons</a>
+        <a href="#formElements" class="formElements">Form Elements</a>
+        <a href="#messages" class="messages">Messages</a>
+    </div> 
+    <!-- About -->
+    <div>
+        <div class="page-header">
+            <h1><a name="about"></a>My Styles</h1>
+        </div>
+        <p>This page contains specific style guide information for my front end interface.</p>
+    </div>
+        <!-- End About -->
+
+    <!-- Fonts -->
+    <div>
+        <div class="page-header">
+            <h1><a name="fonts"></a>Font</h1>
+        </div>
+        <p>My application utilizes the "Merriweather', serif",'Open Sans', sans-serif,
+                'Ubuntu', sans-seriffont-family with black text.</p>
+        <p>Navigation - "Ubuntu",sans-serif</p>
+        <p>Headings - "Merriweather", serif</p>
+        <p>Paragraphs-"Open Sans", sans-serif</p>
+    </div>
+    <div class="spacer">
+        <a href="#mySidenav">Back to Top</a>
+    </div>
+    <!-- End Fonts -->
+
+    <!-- Color Theme -->
+    <div>
+         <div class="page-header">
+             <h1><a name="colorTheme"></a>Color Theme</h1>
+        </div>
+        <p>My application incorporates the below color scheme in its interface.</p>
+        <div class="box" id="primary1"></div>
+        <div class="box" id="primary2"></div>
+        
+        </div>
+         <div class="spacer">
+            <a href="#Top">Back to Top</a>
+        </div>
+
+    <!-- End Color Theme -->
+    
+    <!-- Headings -->
+    <div>
+        <div class="page-header">
+            <h1> <a name="headings"></a>Headings</h1>
+        </div>
+        <p>The below font sizes and styles are used in the application for various content headings.</p>
+        <div id="sub-head">
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+        </div>
+    </div>
+    <div class="spacer">
+        <a href="#Top">Back to Top</a>
+    </div>
+    </div>
+    <!-- End Headings -->
+    
+    <!-- Buttons -->
+    <div>
+        <div class="page-header">
+            <h1><a name="buttons"></a>Buttons</h1>
+        </div>
+        <p>The application will feature buttons that contain the below color and shape:</p>
+        <button>My Button</button>
+    </div>
+    <div class="spacer">
+        <a href="#Top">Back to Top</a>
+    </div>
+    <!-- End Buttons -->
+    
+    <!-- Form Elements -->
+    <div>
+        <div class="page-header">
+            <h1><a name="formElements"></a>Form Elements</h1>
+        </div>
+        <p>For the varous forms that the application will contain, it will contain input fields and labels with the below styling:</p>
+        <form>
+            <label for="name" class="inputLabel">Name</label>
+            <input type="input" id="name" class="inputField" value="">
+        </form>
+        </div>
+            <div class="spacer">
+                <a href="#Top">Back to Top</a>
+        </div>
+        <!-- End Form Elements -->
+    
+    <!-- User Messages -->
+    <div>
+        <div class="page-header">
+            <h1> <a name="messages"></a>Messages</h1>
+    </div>
+        <p>For various completed tasks, application notifications will be presented to the user based.  The following contextual messages will be used.</p>
+        <p class="warning">Warning!</p>
+        <p class="danger">Danger!</p>
+        <p class="success">Success!</p>
+    </div>
+        <div class="spacer">
+            <a href="#Top">Back to Top</a>
+        </div>
+    <!-- End User Messages -->
+    </div>
+        </div>
+        <div id="footer">
+            <div class="container">
+                <p class="text-muted">Copyright My Style Guide</p>
+            </div>
+        </div>   
+</body>
+</html>
