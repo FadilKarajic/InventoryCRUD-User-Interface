@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Capstone Project">
+    <meta name="author" content="Fadil Karajic">
+    <title>Inventory </title> 
+    <meta charset="UTF-8">  
+
+    {% load staticfiles %}  
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>  
+    
+</head>  
+<body>  
+<form method="POST" class="post-form" action="/update/{{inventory.id}}">  
+        {% csrf_token %}  
+     
+
+   
+    <h3>Update Details</h3>  
+
+    <label>Part Number:</label>  
+     
+    <input type="text" name="partNum" id="id_partNum" required maxlength="25" value="{{ inventory.partNum }}"/>  
+    
+    <label>Part Description:</label>  
+
+    <input type="text" name="partDesc" id="id_partDesc" required maxlength="50" value="{{ inventory.partDesc }}" />  
+     
+    <label>Line Location</label>  
+      
+    <input type="text" name="lineLoc" id="id_lineLoc" required maxlength="25" value="{{ inventory.lineLoc }}" />  
+      
+   
+    <label>line Qunatity:</label>  
+      
+    <input type="text" name="lineQuantity" id="id_lineQuantity" required maxlength="5" value="{{ inventory.lineQuantity }}" />  
+    
+ 
+    <label>Line Makeup:</label>  
+     
+    <input type="text" name="lineMakeup" id="id_lineMakeup" required maxlength="5" value="{{ inventory.lineMakeup }}" />  
+
+    <label>System Quantity:</label>  
+     
+    <input type="text" name="sysQuantity" id="id_sysQuantity" required maxlength="5" value="{{ inventory.sysQuantity }}" />  
+   
+    <label>Comments:</label>  
+      
+    <input type="text" name="comments" id="id_comments" required maxlength="15" value="{{ inventory.comments }}" />  
+     
+     
+    <button type="submit" class="btn btn-success">Update</button>  
+     
+</form>  
+</body>  
+</html> 
