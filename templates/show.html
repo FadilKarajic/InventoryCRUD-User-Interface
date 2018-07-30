@@ -11,11 +11,15 @@
     <meta charset="UTF-8">  
 
     {% load staticfiles %}  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Ubuntu">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="{% static 'css/style.css' %}"/>  
     
 </head>  
 <body>  
-<table>    
+<table class="table table-striped">    
+    <thead class="thead-dark">
     <tr>  
         <th>Part Number</th>  
         <th>Part Description</th>  
@@ -26,6 +30,7 @@
         <th>Commentsy</th> 
         <th>Actions</th>  
     </tr>  
+    </thead>
     <tbody>  
         {% for inventory in inventory %}  
     <tr>  
@@ -38,13 +43,14 @@
         <td>{{ inventory.comments }}</td>  
 
         <td>  
-            <a href="/edit/{{ inventory.id }}"><span>Edit</span></a>  
+            <a href="/edit/{{ inventory.id }}">Edit</a>  
             <a href="/delete/{{ inventory.id }}">Delete</a>  
         </td>  
     </tr>  
         {% endfor %}  
     </tbody>  
 </table>  
-<center><a href="/invReq">Add New Record</a></center>  
+
+<center><a href="/invReq" class="btn btn-primary">Add New Record</a></center>  
 </body>  
 </html>  
